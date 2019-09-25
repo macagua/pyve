@@ -1,0 +1,8 @@
+include LICENSE
+include *.gpl *.rst *.txt *.in
+include *.py
+recursive-include docs src *
+global-exclude *.pyc *.pyo *~
+prune build
+prune dist
+

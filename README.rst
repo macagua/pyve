@@ -57,6 +57,12 @@ For test, you need to execute the following command:
 
    $ pytest pyve/test_pyve.py
 
+Q/A Status
+----------
+
+.. image:: https://travis-ci.org/macagua/pyve.svg?branch=master
+    :target: https://travis-ci.org/macagua/pyve
+
 
 Contribute
 ----------

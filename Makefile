@@ -1,16 +1,17 @@
 # You can set these variables from the command line.
-TITLE_HTML_REPORT     = "Coverage report from pyve package"
+TITLE_HTML_REPORT     = "Coverage report from 'pyve' package"
 DIRNAME_HTML_REPORT   = coveragereport
 
 .PHONY: help all clean test html
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  setup      to install dependencies"
-	@echo "  test       to run the PyTest tests"
-	@echo "  coverage   to make standalone HTML files of the coverage test documentation"
+	@echo "  setup        to install dependencies"
+	@echo "  test         to execute the PyTest tests"
+	@echo "  coverage     to measure, collect, and report on code coverage in Python programs"
+	@echo "  html_report  to make standalone HTML files of the coverage test documentation"
 
-all: setup test coverage 
+all: setup test coverage html_report
 
 ########################################################################
 ## Install dependencies
@@ -18,16 +19,19 @@ all: setup test coverage
 setup: 
 	pip install --timeout 120 -r requirements-dev.txt 
 	pip install --timeout 120 .
+	@echo
+	@echo "The install dependencies are done."
+	@echo
 
 
 ########################################################################
 ## Tests
 
 test: clean
-	py.test --flakes
+	pytest --flakes
 	pytest tests/test_pyve.py
 	@echo
-	@echo "The PyTests are done."
+	@echo "The PyTests tests are passed."
 	@echo
 
 
@@ -41,10 +45,15 @@ clean:
 	@echo "The coverage data are erased."
 	@echo
 
-
 coverage:
+	coverage3 run -m py.test tests/test_pyve.py
+	@echo
+	@echo "The coverage test report are finished."
+	@echo
+
+html_report:
 	coverage3 html --title=$(TITLE_HTML_REPORT) pyve.py
 	@echo
-	@echo "HTML report are finished in $(DIRNAME_HTML_REPORT)/html/index.html."
+	@echo "HTML report are done in $(DIRNAME_HTML_REPORT)/index.html."
 	@echo
 

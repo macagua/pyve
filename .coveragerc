@@ -1,4 +1,14 @@
+# .coveragerc to control coverage.py
+[run]
+# branch = True
+source = pyve.py,setup.py
+# omit = tests.py
+parallel = False
 [report]
+show_missing = True
 omit =
     docs/*
-    pyve/test_*
+    tests/*
+[html]
+directory = coveragereport
+

@@ -1,6 +1,8 @@
 """ Documentation from Python Venezuela Community """
 
-message = """La comunidad Python en Venezuela, por Leonardo J. Caballero G.
+def show_message():
+    
+    message = """La comunidad Python en Venezuela, por Leonardo J. Caballero G.
 
 Somos un grupo de entusiastas reunidos.
 Nuestro objetivo: promocionar el lenguaje de programación Python
@@ -27,5 +29,14 @@ Somos tan Capitalinos como el Avila!!!
 Somos tan Venezolanos como la Arepa!!!
 Somos solidarios, somos Venezolanos."""
 
-print(message)
+    return print(message)
+
+
+if __name__ == '__main__':
+    """ Start the Python program """
+    show_message()
+elif __name__ == "pyve":
+    show_message()
+else:
+    print("This program is badly configured, you must call its module...")
 

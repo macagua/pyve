@@ -39,7 +39,7 @@ setup(
     download_url="https://github.com/macagua/pyve",
     license="GPL",
     platforms="Unix",
-    packages=["pyve/"],
+    packages=[""],
     include_package_data=True,
     install_requires=[
         'setuptools',

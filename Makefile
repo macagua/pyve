@@ -1,5 +1,6 @@
 # You can set these variables from the command line.
 TITLE_HTML_REPORT     = "Coverage report from pyve package"
+DIRNAME_HTML_REPORT   = coveragereport
 
 .PHONY: help all clean test html
 
@@ -24,7 +25,7 @@ setup:
 
 test: clean
 	py.test --flakes
-	pytest pyve/test_pyve.py
+	pytest tests/test_pyve.py
 	@echo
 	@echo "The PyTests are done."
 	@echo
@@ -34,16 +35,16 @@ test: clean
 ## Coverage
 
 clean:
-	rm -rf htmlcov/
+	rm -rf $(DIRNAME_HTML_REPORT)/
 	coverage3 erase
 	@echo
 	@echo "The coverage data are erased."
 	@echo
 
 
-coverage: clean
-	coverage3 html --title=$(TITLE_HTML_REPORT) pyve/*.py
+coverage:
+	coverage3 html --title=$(TITLE_HTML_REPORT) pyve.py
 	@echo
-	@echo "HTML report are finished in htmlcov/html/index.html."
+	@echo "HTML report are finished in $(DIRNAME_HTML_REPORT)/html/index.html."
 	@echo
 

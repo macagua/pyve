@@ -1,6 +1,6 @@
 """ PyTest program """
 
-from pyve import message
+from pyve import show_message as message
 
 def get_string():
     """ get the message string from pyve package """

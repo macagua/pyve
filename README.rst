@@ -7,7 +7,6 @@ This is package example for support information about the Python Venezuela Commu
 .. image:: https://avatars2.githubusercontent.com/u/1817205?s=200&v=4
     :target: https://pyve.github.io/
 
-    The **pyve** package
 
 Features
 --------

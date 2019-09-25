@@ -4,6 +4,9 @@ pyve
 
 This is package example for support information about the Python Venezuela Community.
 
+.. image:: https://avatars2.githubusercontent.com/u/1817205?s=200&v=4
+    :target: https://pyve.github.io/
+
 
 Features
 --------
@@ -16,7 +19,7 @@ Features
 Installation
 ------------
 
-Install **pyve** you need to execute the following command:
+For install the **pyve** package, you need to execute the following command:
 
 ::
 

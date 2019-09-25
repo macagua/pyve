@@ -7,13 +7,14 @@ This is package example for support information about the Python Venezuela Commu
 .. image:: https://avatars2.githubusercontent.com/u/1817205?s=200&v=4
     :target: https://pyve.github.io/
 
+    The **pyve** package
 
 Features
 --------
 
-- Documentation from Python Venezuela Community support.
+- Documentation from Python Venezuela Community supported.
 
-- Social network reference from Python Venezuela Community support.
+- Social networks references from Python Venezuela Community.
 
 
 Installation

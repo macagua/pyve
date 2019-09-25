@@ -1,6 +1,6 @@
 """ Documentation from Python Venezuela Community """
 
-pyve = """La comunidad Python en Venezuela, por Leonardo J. Caballero G.
+message = """La comunidad Python en Venezuela, por Leonardo J. Caballero G.
 
 Somos un grupo de entusiastas reunidos.
 Nuestro objetivo: promocionar el lenguaje de programación Python
@@ -27,5 +27,5 @@ Somos tan Capitalinos como el Avila!!!
 Somos tan Venezolanos como la Arepa!!!
 Somos solidarios, somos Venezolanos."""
 
-print(pyve)
+print(message)
 

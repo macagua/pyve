@@ -23,7 +23,7 @@ For install the **pyve** package, you need to execute the following command:
 
 ::
 
-   pip install pyve --timeout 120
+   pip install --user pyve --timeout 120
 
 
 and later you can use it, into a command shell like this:
@@ -38,6 +38,24 @@ also can try it, into a Python shell like this command:
 ::
 
    >>> import pyve
+
+
+Development
+-----------
+
+For development process the **pyve** package, you need to execute the following command:
+
+::
+
+   $ git clone git@github.com:macagua/pyve.git
+   $ cd pyve/
+   $ pip install --user requirements-dev.txt
+
+For test, you need to execute the following command:
+
+::
+
+   $ pytest pyve/test_pyve.py
 
 
 Contribute

@@ -66,6 +66,9 @@ Q/A Status
 .. image:: https://travis-ci.org/macagua/pyve.svg?branch=master
     :target: https://travis-ci.org/macagua/pyve
 
+.. image:: https://circleci.com/gh/macagua/pyve.svg?style=svg
+    :target: https://circleci.com/gh/macagua/pyve
+
 .. image:: https://coveralls.io/repos/github/macagua/pyve/badge.svg?branch=master
     :target: https://coveralls.io/github/macagua/pyve?branch=master
 

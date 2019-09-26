@@ -1,0 +1,36 @@
+# Python CircleCI 2.0 configuration file
+version: 2
+jobs:
+  build:
+    working_directory: ~/circleci-pyve
+    docker:
+      # every job must define an image for the docker executor and subsequent jobs may define a different image.
+      - image: circleci/python:3.6.4
+    steps:
+      # Step 1 - obtain repo from GitHub
+      - checkout # checkout source code to working directory
+      - restore_cache: # ensure this step occurs *before* installing dependencies
+          key: deps1-{{ .Branch }}-{{ checksum "requirements-dev.txt" }}
+      # Step 2 - create virtual env and install dependencies
+      - run:
+          name: Install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            make setup
+      - save_cache:
+          key: deps1-{{ .Branch }}-{{ checksum "requirements-dev.txt" }}
+          paths:
+            - ".venv"
+      # Step 3 - run linter and tests
+      - run:
+          name: Running tests
+          command: |
+            . venv/bin/activate
+            make test
+      - store_artifacts: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+          path: coveragereport/
+      - store_test_results: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
+          path: coveragereport
+          destination: tr1
+

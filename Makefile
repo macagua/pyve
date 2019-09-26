@@ -17,9 +17,9 @@ all: setup test coverage html_report
 
 setup: 
 	pip install --timeout 120 -r requirements-dev.txt 
-	pip install --timeout 120 -e .
+	pip install --timeout 120 .
 	@echo
-	@echo "The install dependencies are done."
+	@echo "The dependencies are installed."
 	@echo
 
 
@@ -28,9 +28,9 @@ setup:
 
 test: clean
 	pytest --flakes
-	pytest tests/test_pyve.py
+	pytest --cov=pyve
 	@echo
-	@echo "The PyTests tests are passed."
+	@echo "The PyTest tests are executed."
 	@echo
 
 

@@ -15,7 +15,7 @@ all: setup test coverage html_report
 ########################################################################
 ## Install dependencies
 
-setup: 
+setup:
 	pip install --timeout 120 -r requirements-dev.txt 
 	pip install --timeout 120 .
 	@echo

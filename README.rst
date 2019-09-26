@@ -23,7 +23,7 @@ For install the **pyve** package from PyPI, you need to execute the following co
 
 ::
 
-   pip install --user pyve --timeout 120
+   pip install --timeout 120 --user pyve
 
 
 and later you can use it, into a command shell like this:
@@ -47,16 +47,18 @@ For development process the **pyve** package, you need to execute the following 
 
 ::
 
+   $ sudo apt update && sudo apt upgrade -y
+   $ sudo apt install python3-dev git
    $ git clone git@github.com:macagua/pyve.git
    $ cd pyve/
-   $ pip install --user --timeout 120 -r requirements-dev.txt
-   $ pip install --user --timeout 120 -e .
+   $ make setup
 
 For test, you need to execute the following command:
 
 ::
 
-   $ pytest pyve/test_pyve.py
+   $ make test
+
 
 Q/A Status
 ----------

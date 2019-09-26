@@ -1,5 +1,4 @@
 # You can set these variables from the command line.
-TITLE_HTML_REPORT     = "Coverage report from 'pyve' package"
 DIRNAME_HTML_REPORT   = coveragereport
 
 .PHONY: help all clean test html
@@ -18,7 +17,7 @@ all: setup test coverage html_report
 
 setup: 
 	pip install --timeout 120 -r requirements-dev.txt 
-	pip install --timeout 120 .
+	pip install --timeout 120 -e .
 	@echo
 	@echo "The install dependencies are done."
 	@echo
@@ -52,7 +51,7 @@ coverage:
 	@echo
 
 html_report:
-	coverage3 html --title=$(TITLE_HTML_REPORT) pyve.py
+	coverage3 html pyve.py
 	@echo
 	@echo "HTML report are done in $(DIRNAME_HTML_REPORT)/index.html."
 	@echo

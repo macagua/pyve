@@ -1,14 +1,31 @@
 # .coveragerc to control coverage.py
 [run]
+## whether to measure branch coverage in addition to statement coverage.
 # branch = True
-source = pyve.py,setup.py
+
+## a list of file name patterns, the files to leave out of measurement or reporting.
 # omit = tests.py
-parallel = False
+
+## a list of packages or directories, the source to measure during execution.
+source = pyve.py,setup.py
+
 [report]
-show_missing = True
+## a list of regular expressions for lines to exclude from consideration.
+exclude_lines =
+    if __name__ == .__main__.:
+
+## a list of file name patterns, the files to leave out of reporting.
 omit =
     docs/*
     tests/*
+
+## when running a summary report, show missing lines.
+show_missing = True
+
 [html]
+## where to write the HTML report files.
 directory = coveragereport
+
+## the title to use for the report.
+title = Coverage report from 'pyve' package
 

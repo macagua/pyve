@@ -1,16 +1,17 @@
-""" PyTest program """
+""" PyTest tests """
 
-from pyve import show_message as message
+from pyve import *
 
-def get_string():
-    """ get the message string from pyve package """
-    return message
+pyve = Community(MESSAGE)
+
+test_message = "La comunidad Python en Venezuela, por Leonardo J. Caballero G."
 
 def test_string_not_equal():
     """ test if the message not is iqual """
-    assert get_string() != "La comunidad Python en Venezuela, por Leonardo J. Caballero G."
+    assert pyve != test_message
 
 def test_string_equal():
     """ test if the message is iqual """
-    assert get_string() == message
+    if pyve and str(pyve.message):
+        assert True
 

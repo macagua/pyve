@@ -1,9 +1,6 @@
 """ Documentation from Python Venezuela Community """
 
-def show_message():
-    
-    message = """La comunidad Python en Venezuela, por Leonardo J. Caballero G.
-
+MESSAGE = """La comunidad Python en Venezuela, por Leonardo J. Caballero G.\n
 Somos un grupo de entusiastas reunidos.
 Nuestro objetivo: promocionar el lenguaje de programación Python
 Nos gusta difundir las bondades de Python.
@@ -29,14 +26,21 @@ Somos tan Capitalinos como el Avila!!!
 Somos tan Venezolanos como la Arepa!!!
 Somos solidarios, somos Venezolanos."""
 
-    return print(message)
+
+class Community():
+    """ Class that represent to Python Venezuela Community """
+
+    def __init__(self, message):
+        """ PyVe Constructor Class """
+        self.message = message
+
+    def __str__(self):
+        """ Return a string about the Python Venezuela Community """
+        return "%s" % (self.message)
 
 
 if __name__ == '__main__':
-    """ Start the Python program """
-    show_message()
-elif __name__ == "pyve":
-    show_message()
-else:
-    print("This program is badly configured, you must call its module...")
+    """ Start the main program """
+    py_vzla = Community(MESSAGE)
+    print(py_vzla)
 

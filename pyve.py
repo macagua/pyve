@@ -27,7 +27,7 @@ Somos tan Venezolanos como la Arepa!!!
 Somos solidarios, somos Venezolanos."""
 
 
-class Community():
+class Community(object):
     """ Class that represent to Python Venezuela Community """
 
     def __init__(self, message):

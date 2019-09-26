@@ -1,6 +1,6 @@
 """ PyTest tests """
 
-from pyve import *
+from pyve import MESSAGE, Community
 
 pyve = Community(MESSAGE)
 

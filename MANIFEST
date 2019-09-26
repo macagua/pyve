@@ -3,5 +3,5 @@ LICENSE
 MANIFEST.in
 README.rst
 setup.py
-pyve/__init__.py
+pyve.py
 

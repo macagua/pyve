@@ -1,7 +1,7 @@
 include LICENSE
 include *.gpl *.rst *.txt *.in
 include *.py
-recursive-include docs src *
+recursive-include docs tests *
 global-exclude *.pyc *.pyo *~
 prune build
 prune dist

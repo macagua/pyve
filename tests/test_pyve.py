@@ -14,3 +14,4 @@ def test_string_equal():
     """ test if the message is iqual """
     if py_vzla and str(py_vzla.message):
         assert True
+

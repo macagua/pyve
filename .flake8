@@ -1,0 +1,5 @@
+[flake8]
+ignore = W391,W503,W504
+exclude = .git,__pycache__,docs,build,dist,venv
+max-complexity = 10
+

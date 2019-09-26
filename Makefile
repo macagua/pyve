@@ -27,7 +27,7 @@ setup:
 ## Tests
 
 test: clean
-	flake8 --exclude=build,docs,venv* --statistics
+	flake8 --statistics
 	pytest --flakes
 	pytest --cov=pyve
 	@echo

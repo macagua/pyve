@@ -41,3 +41,4 @@ class Community(object):
 
 py_vzla = Community(MESSAGE)
 print(py_vzla)
+

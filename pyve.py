@@ -38,9 +38,6 @@ class Community(object):
         """ Return a string about the Python Venezuela Community """
         return "%s" % (self.message)
 
-
-if __name__ == '__main__':
-    """ Start the main program """
-    py_vzla = Community(MESSAGE)
-    print(py_vzla)
+py_vzla = Community(MESSAGE)
+print(py_vzla)
 

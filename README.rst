@@ -19,7 +19,7 @@ Features
 Installation
 ------------
 
-For install the **pyve** package, you need to execute the following command:
+For install the **pyve** package from PyPI, you need to execute the following command:
 
 ::
 
@@ -49,7 +49,8 @@ For development process the **pyve** package, you need to execute the following 
 
    $ git clone git@github.com:macagua/pyve.git
    $ cd pyve/
-   $ pip install --user requirements-dev.txt
+   $ pip install --user --timeout 120 -r requirements-dev.txt
+   $ pip install --user --timeout 120 -e .
 
 For test, you need to execute the following command:
 

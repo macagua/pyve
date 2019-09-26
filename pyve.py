@@ -13,7 +13,7 @@ Tenemos la organización "Fundación Python Venezuela".
 Tenemos página principal https://pyve.github.io
 Tenemos página de Facebook https://facebook.com/python.ve
 Nos encuentras en Telegram https://t.me/python_venezuela
-Nos encuentras en Linkedin https://linkedin.com/company/fundación-python-de-venezuela
+Estamos en Linkedin https://linkedin.com/company/fundación-python-de-venezuela
 Nosotros tuiteamos en https://twitter.com/PythonVe
 Nosotros también tuiteamos en https://twitter.com/PyConVe
 Colaboramos en la forja de código Github https://github.com/pyve
@@ -38,6 +38,6 @@ class Community(object):
         """ Return a string about the Python Venezuela Community """
         return "%s" % (self.message)
 
+
 py_vzla = Community(MESSAGE)
 print(py_vzla)
-

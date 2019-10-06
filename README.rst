@@ -4,6 +4,8 @@ pyve
 
 This is package example for support information about the Python Venezuela Community.
 
+.. image:: https://img.shields.io/badge/Python-3.5-blue
+
 .. image:: https://avatars2.githubusercontent.com/u/1817205?s=200&v=4
     :target: https://pyve.github.io/
 

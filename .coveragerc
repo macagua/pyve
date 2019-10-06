@@ -16,8 +16,11 @@ exclude_lines =
 
 ## a list of file name patterns, the files to leave out of reporting.
 omit =
+    build/*
+    dist/*
     docs/*
     tests/*
+    venv/*
 
 ## when running a summary report, show missing lines.
 show_missing = True

@@ -1,2 +1,2 @@
 - "Leonardo J. Caballero G.", 2019, Owner, Python Developer
-
+- "Edgard Decena", 2019, Contributor, Python Developer

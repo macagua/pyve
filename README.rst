@@ -4,9 +4,6 @@ pyve
 
 This is package example for support information about the Python Venezuela Community.
 
-.. image:: https://img.shields.io/badge/Python-3.5-blue:
-    target: https://www.python.org/downloads/release/python-350/
-
 .. image:: https://avatars2.githubusercontent.com/u/1817205?s=200&v=4
     :target: https://pyve.github.io/
 
@@ -66,6 +63,9 @@ For test, you need to execute the following command:
 Q/A Status
 ----------
 
+.. image:: https://img.shields.io/badge/Python-3.5-blue
+    :target: https://www.python.org/downloads/release/python-350/
+
 .. image:: https://travis-ci.org/macagua/pyve.svg?branch=master
     :target: https://travis-ci.org/macagua/pyve
 
@@ -95,4 +95,3 @@ License
 -------
 
 The project is licensed under the GPLv2.
-

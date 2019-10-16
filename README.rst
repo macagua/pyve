@@ -91,7 +91,7 @@ We can response questions and comments to **leonardocaballero at gmail dot com**
 License
 -------
 
-The project is licensed under the GPLv2.
+The project is licensed under the GPLv3.
 
 .. |LogoPyVe| image:: https://avatars2.githubusercontent.com/u/1817205?s=200&v=4
    :target: https://pyve.github.io/

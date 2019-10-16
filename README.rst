@@ -4,8 +4,9 @@ pyve
 
 This is package example for support information about the Python Venezuela Community.
 
-.. image:: https://avatars2.githubusercontent.com/u/1817205?s=200&v=4
-    :target: https://pyve.github.io/
+|LogoPyVe|
+
+|Twitter| |Contributors| |GitHubLicense| |GitHubIssues| |GitHubForks| |GitHubStars|
 
 
 Features
@@ -63,17 +64,13 @@ For test, you need to execute the following command:
 Q/A Status
 ----------
 
-.. image:: https://img.shields.io/badge/Python-3.5-blue
-    :target: https://www.python.org/downloads/release/python-350/
+|Python35|
 
-.. image:: https://travis-ci.org/macagua/pyve.svg?branch=master
-    :target: https://travis-ci.org/macagua/pyve
+|TravisCI|
 
-.. image:: https://circleci.com/gh/macagua/pyve.svg?style=svg
-    :target: https://circleci.com/gh/macagua/pyve
+|CircleCI|
 
-.. image:: https://coveralls.io/repos/github/macagua/pyve/badge.svg?branch=master
-    :target: https://coveralls.io/github/macagua/pyve?branch=master
+|CoverallIO|
 
 
 Contribute
@@ -95,3 +92,37 @@ License
 -------
 
 The project is licensed under the GPLv2.
+
+.. |LogoPyVe| image:: https://avatars2.githubusercontent.com/u/1817205?s=200&v=4
+   :target: https://pyve.github.io/
+
+.. |Twitter| image:: https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fmacagua%2Fpyve
+   :target: https://twitter.com/intent/tweet?text=Download and use 'pyve' package for doing Python trainings in Venezuela 🇻🇪 https://github.com/macagua/pyve
+
+.. |Contributors| image:: https://img.shields.io/github/contributors/macagua/pyve.svg
+   :target: https://github.com/macagua/pyve/graphs/contributors
+
+.. |GitHubLicense| image:: https://img.shields.io/github/license/macagua/pyve.svg
+   :target: https://github.com/macagua/pyve/blob/master/LICENSE
+
+.. |GitHubIssues| image:: https://img.shields.io/github/issues/macagua/pyve
+   :target: https://github.com/macagua/pyve/issues
+
+.. |GitHubForks| image:: https://img.shields.io/github/forks/macagua/pyve
+   :target: https://github.com/macagua/pyve/network/members
+
+.. |GitHubStars| image:: https://img.shields.io/github/stars/macagua/pyve
+   :target: https://github.com/macagua/pyve/stargazers
+
+.. |Python35| image:: https://img.shields.io/badge/Python-3.5-blue
+   :target: https://www.python.org/downloads/release/python-350/
+
+.. |TravisCI| image:: https://travis-ci.org/macagua/pyve.svg?branch=master
+   :target: https://travis-ci.org/macagua/pyve
+
+.. |CircleCI| image:: https://circleci.com/gh/macagua/pyve.svg?style=svg
+   :target: https://circleci.com/gh/macagua/pyve
+
+.. |CoverallIO| image:: https://coveralls.io/repos/github/macagua/pyve/badge.svg?branch=master
+   :target: https://coveralls.io/github/macagua/pyve?branch=master
+

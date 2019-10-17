@@ -97,7 +97,7 @@ The project is licensed under the GPLv3.
    :target: https://pyve.github.io/
 
 .. |Twitter| image:: https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fmacagua%2Fpyve
-   :target: https://twitter.com/intent/tweet?text=Download and use 'pyve' package for doing Python trainings in Venezuela 🇻🇪 https://github.com/macagua/pyve
+   :target: https://twitter.com/intent/tweet?text=Download%20and%20use%20%27pyve%27%20package%20for%20doing%20Python%20trainings%20in%20Venezuela%20%F0%9F%87%BB%F0%9F%87%AA%20https://github.com/macagua/pyve
 
 .. |Contributors| image:: https://img.shields.io/github/contributors/macagua/pyve.svg
    :target: https://github.com/macagua/pyve/graphs/contributors
